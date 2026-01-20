@@ -1,0 +1,159 @@
+AWS Global Infrastructure (Simple Explanation)
+----------------------------------------------
+What is AWS Global Infrastructure?
+
+AWS Global Infrastructure means how AWS has set up its data centers all over the world so that applications can run:
+
+Faster
+
+More securely
+
+With high availability
+
+Think of AWS like a big network of data centers spread across the globe 🌍.
+
+Main Parts of AWS Global Infrastructure
+
+AWS global infrastructure has 4 main components:
+
+1. Regions
+
+2. Availability Zones (AZs)
+
+3. Data Centers
+
+4. Edge Locations
+
+Let’s understand each one in simple words.
+
+1. AWS Regions
+---------------
+
+What is a Region?
+
+A Region is a geographical area where AWS has its data centers.
+
+Examples:-
+---------
+
+Mumbai (ap-south-1)
+
+US East (N. Virginia)
+
+London
+
+Frankfurt
+
+Why Regions exist?
+
+-> To keep data close to users
+
+-> To follow data laws of countries
+
+-> To reduce network delay (latency)
+
+Simple Example:
+----------------
+
+If your users are in India, you choose the Mumbai region so your app loads faster.
+
+2. Availability Zones (AZs)
+----------------------------
+What is an Availability Zone?
+
+An Availability Zone is one or more data centers inside a region.
+
+Each region has multiple AZs (usually 2–6).
+
+Important:-
+-----------
+
+AZs are physically separate
+
+They have independent power, cooling, and network
+
+But they are connected with high-speed private links
+
+Why AZs are important?
+
+-> If one AZ fails, others keep working
+
+-> Helps in high availability and fault tolerance
+
+Simple Example:-
+----------------
+
+Think of a region as a city and AZs as different buildings in that city.
+
+3. AWS Data Centers
+-------------------
+What are Data Centers?
+
+Data centers are physical buildings where:
+
+Servers
+
+Storage
+
+Networking devices
+
+are stored.
+
+AWS does not share exact locations for security reasons.
+
+Simple Example:-
+----------------
+
+A data center is like a huge server room with thousands of computers.
+
+4. Edge Locations
+-----------------
+What are Edge Locations?
+
+Edge locations are used by Amazon CloudFront (CDN) to deliver content faster.
+
+They store cached copies of:
+
+Images
+
+Videos
+
+Web pages
+
+Why Edge Locations?
+
+Reduce load on main servers
+
+Deliver content faster to users
+
+Simple Example:-
+------------------
+
+Instead of fetching a video from Mumbai every time, AWS serves it from a nearby edge location.
+
+How AWS Global Infrastructure Helps You
+1️⃣ High Availability
+
+Run applications in multiple AZs so your app doesn’t go down.
+
+2️⃣ Low Latency
+
+Choose a region close to users + use edge locations.
+
+3️⃣ Scalability
+
+AWS can handle millions of users easily.
+
+4️⃣ Security
+
+Data is isolated by regions and AZs.
+
+Simple Architecture Example
+
+Region: Mumbai
+
+AZ-1: App Server
+
+AZ-2: Backup App Server
+
+Edge Locations: Serve images and videos
